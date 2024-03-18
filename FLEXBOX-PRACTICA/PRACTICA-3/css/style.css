@@ -1,0 +1,84 @@
+:root {
+    --font1: "Open Sans", sans-serif;
+    --font2: "Poppins", sans-serif;
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+
+    --padding-container: 60px 0;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font1);
+}
+
+.hero{
+    background-color: var(--violet);
+
+}
+/* agregamos la clase container para darle a las secciones importantes un ancho definido*/
+.container{
+    width: 90%;
+    margin: 0 auto;
+    /* background-color: black; */
+    overflow: hidden;
+    max-width: 1200px;
+    padding: var(--padding-container);
+}
+
+.nav{
+    --padding-container: 30px 0;
+}
+
+.nav__logo{
+    width: 150px;
+    display: block;
+}
+
+.hero__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__img{
+    max-width: 350px;
+    width: 100%;
+    /* se le agrega un display block porque las imagenes tienen un pequeño margen abajo*/
+    display: block;
+    margin: 0 auto;
+
+}
+
+.hero__texts{
+    margin: 3.5em 0;
+    color: #fff;
+    text-align: center;
+}
+
+.hero__title{
+    font-size: 1.7rem;
+    font-family: var(--font2);
+}
+
+.hero__paragraph{
+    line-height: 1.5;
+    margin: 1.2em 0 1.7em;
+
+}
+
+.hero__cta{
+    /* para que acepte propiedades de margin y padding */
+    display: inline-block;
+    color: var(--violet);
+    background-color: #fff;
+    text-decoration: none;
+    padding: 1em 6em;
+    border-radius: 2em;
+    box-shadow: 0 1px 4px rgb(0, 0, 0, 0.5);
+    
+}
